@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    padding: 50px 20px;
+    width: 55%;
+}
+
+.wrapper .flex-wrap{
+    display: flex;
+    background-color: #fff;
+}
+
+.wrapper .flex-wrap .active{
+    background: pink;
+    padding: 20px 0px 20px 50px;
+    height: 40vh;
+}
+
+.player-0-panel, .player-1-panel{
+    font-weight: bold;
+    font-size: 24px;
+    height: 30vh;
+    width: 100%;
+}
+
+.player-0-panel{
+    margin-left: 7%;
+}
+
+.player-1-panel{
+    margin-left: 20%;
+    margin-right: 40px;
+}
+
+.player-name, .player-score, .player-current-label, .player-current-score{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.player-score, .player-current-label, .player-current-score{
+    margin-top: 20px;
+}
+
+img{
+    position: absolute;
+    width: 13%;
+    top: 25%;
+    left: 44%;
+}
+
+.btn-new, .btn-roll, .btn-hold{
+    position: absolute;
+    border: none;
+    background: transparent;
+    color: orangered;
+    left: 47%;
+    cursor: pointer;
+}
+
+.btn-new:hover, .btn-roll:hover, .btn-hold:hover{
+    color: black;
+}
+
+.btn-new{
+    top: 8%;
+    transform: translate(-10%, -52%);
+}
+
+.btn-roll{
+    top: 75%;
+}
+
+.btn-hold{
+    top: 80%;
+}
